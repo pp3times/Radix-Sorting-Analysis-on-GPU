@@ -1,0 +1,19 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\x64\Debug\kernel.cu.obj "C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu" 
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(149): warning #1444-D: function "__ballot"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+  
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(184): warning #177-D: variable "range" was declared but never referenced
+  
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(227): warning #177-D: variable "range" was declared but never referenced
+  
+ptxas C : /Users/Jeremy/AppData/Local/Temp/tmpxft_000092f4_00000000-7_kernel.ptx, line 998; warning : Instruction 'vote' without '.sync' is deprecated since PTX ISA version 6.0 and will be discontinued in a future PTX ISA version
+  kernel.cu
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(182): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(208): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(225): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Jeremy\Desktop\hci\HCI_Project\HCI_Project\kernel.cu(251): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+     Creating library C:\Users\Jeremy\Desktop\hci\HCI_Project\x64\Debug\HCI_Project.lib and object C:\Users\Jeremy\Desktop\hci\HCI_Project\x64\Debug\HCI_Project.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  HCI_Project.vcxproj -> C:\Users\Jeremy\Desktop\hci\HCI_Project\x64\Debug\HCI_Project.exe
